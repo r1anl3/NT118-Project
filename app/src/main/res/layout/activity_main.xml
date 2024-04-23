@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#37286E"
+    android:orientation="vertical"
+    tools:context=".Activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_bgColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@drawable/back_3" />
+
+            <ImageView
+                android:id="@+id/img_bgImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@drawable/logo3" />
+
+            <ImageButton
+                android:id="@+id/btn_changeLanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="Change Language" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome_back"
+                android:textColor="#ffffff"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                android:textSize="40sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btn_signIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/persian_blue"
+                android:layout_below="@+id/tv_welcome"
+                android:layout_centerHorizontal="true"
+                android:layout_marginVertical="24dp"
+                android:text="@string/sign_in"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_signUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:backgroundTint="@color/persian_blue"
+                android:layout_centerHorizontal="true"
+                android:layout_marginVertical="24dp"
+                android:layout_below="@+id/btn_signIn"
+                android:text="@string/sign_up" />
+
+            <Button
+                android:id="@+id/btn_noSignIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/midnight_blue"
+                android:textSize="16sp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/btn_signUp"
+                android:text="@string/continue_using"/>
+
+            <Button
+                android:id="@+id/btn_resetPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="16dp"
+                android:background="@android:color/transparent"
+                android:text="@string/reset_your_password"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+.idea
+.gradle
+local.properties
+*/build
+*/libs
+gradle
+log
+gradle*
+app/*.json
+app/sampledata
