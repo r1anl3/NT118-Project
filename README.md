@@ -4,7 +4,7 @@
 
 ## Description
 
-A weather app using UIT API
+A air quality monitoring app using UIT API
 
 ### Objective
 
